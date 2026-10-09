@@ -1,0 +1,163 @@
+{
+  "sources": {
+    "probabl-ai/skills-hackathon": {
+      "name": "ibm-hackaton-skills",
+      "repository": "probabl-ai/skills-hackathon",
+      "version": "0.7.0",
+      "description": "Lab skills for the IBM \u00c3\u2014 Probabl Parkinson hackaton.",
+      "catalog_hash": "6c89662b30f9643e2bdae9a2e901cc26346d67834da95411e4f4ec88994869dd",
+      "skills": [
+        {
+          "id": "explore-ml-data",
+          "path": "src/skore_cli/skills/explore-ml-data",
+          "title": "Explore ML Data",
+          "summary": "Explore the dataset before designing any model.",
+          "category": "methodology",
+          "subcategory": null,
+          "hash": "3e3a2d2f2162aac42b1275a1e4b5d0cccf6a29f6cd01220c575d77f06d93dede"
+        },
+        {
+          "id": "build-ml-pipeline",
+          "path": "src/skore_cli/skills/build-ml-pipeline",
+          "title": "Build ML Pipeline",
+          "summary": "Build a machine learning pipeline from the data source to the learner, including multi-tables engineering.",
+          "category": "methodology",
+          "subcategory": null,
+          "hash": "cb479139127204d9ec7a17fb6787fd201a9e92a3a3033d11752a959f75bf76ed"
+        },
+        {
+          "id": "evaluate-ml-pipeline",
+          "path": "src/skore_cli/skills/evaluate-ml-pipeline",
+          "title": "Evaluate ML Pipeline",
+          "summary": "Evaluate a complex machine learning pipeline and get structured reports including metrics, plots, and diagnostics.",
+          "category": "methodology",
+          "subcategory": null,
+          "hash": "1b19e29c4069a12c27f06fb4928455cdd920707a26d00af2ef12eeacd08c719e"
+        },
+        {
+          "id": "test-ml-pipeline",
+          "path": "src/skore_cli/skills/test-ml-pipeline",
+          "title": "Test ML Pipeline",
+          "summary": "Make sure that your machine learning pipeline is production-ready statistically and functionally.",
+          "category": "orchestration",
+          "subcategory": "dispatchers",
+          "hash": "7a9bd50eca66818213132ac224d170b849b3543c5b751cd115671c89159c8ebf"
+        },
+        {
+          "id": "smoke-test-ml-pipeline",
+          "path": "src/skore_cli/skills/smoke-test-ml-pipeline",
+          "title": "Smoke Test ML Pipeline",
+          "summary": "Stress test your machine learning pipeline on future data to make sure it works.",
+          "category": "orchestration",
+          "subcategory": "test-strategies",
+          "hash": "0833b103ddb3eace1f130d2cfcf2f8343abf520c5b6b7567b438ec345e291a03"
+        },
+        {
+          "id": "audit-ml-pipeline",
+          "path": "src/skore_cli/skills/audit-ml-pipeline",
+          "title": "Audit ML Pipeline",
+          "summary": "Once testing and the experiment is done, audit by loading a skore report and investigate.",
+          "category": "methodology",
+          "subcategory": null,
+          "hash": "8884df7969950e8f33d5a913ede8064b4a9adc5bbb82f8fedf7369489d7dec84"
+        },
+        {
+          "id": "iterate-ml-experiment",
+          "path": "src/skore_cli/skills/iterate-ml-experiment",
+          "title": "Iterate ML Experiment",
+          "summary": "Design, keep track of experiments and iterate on them.",
+          "category": "orchestration",
+          "subcategory": "dispatchers",
+          "hash": "bd19c0472addf21bb1f88862ce71a157d74da0b9f99735981836116f1dfb6ab5"
+        },
+        {
+          "id": "iterate-from-skore",
+          "path": "src/skore_cli/skills/iterate-from-skore",
+          "title": "Iterate from Skore",
+          "summary": "Use skore to run diagnostics and checks that can be reported and addressed in the next experiment.",
+          "category": "orchestration",
+          "subcategory": "experiment-sourcing",
+          "hash": "6173042f26e09675bfeb4cabf56bee1a6592b7c8edd49fc8e5f29128366a86d2"
+        },
+        {
+          "id": "iterate-from-user",
+          "path": "src/skore_cli/skills/iterate-from-user",
+          "title": "Iterate from User",
+          "summary": "As a user be in the loop and propose new experiments \u00e2\u20ac\u201d free-text, a scientific article URL, or a resource link (GitHub issue / spec / reference repo).",
+          "category": "orchestration",
+          "subcategory": "experiment-sourcing",
+          "hash": "4745aa5207207aab496570f9eebd749fa53a8cdeb6dedb555f8fa88d699fd9ad"
+        },
+        {
+          "id": "organize-ml-workspace",
+          "path": "src/skore_cli/skills/organize-ml-workspace",
+          "title": "Organize ML Workspace",
+          "summary": "An organized workspace to keep track of your experiments.",
+          "category": "tooling",
+          "subcategory": "project-setup",
+          "hash": "ff210e97bf9f38879c322818de81c47c6ad328b66e3c06586b8cb699d4ecf1e7"
+        },
+        {
+          "id": "python-code-style",
+          "path": "src/skore_cli/skills/python-code-style",
+          "title": "Python Code Style",
+          "summary": "Enforce good practices out-of-the-box for the Python ecosystem for your code.",
+          "category": "tooling",
+          "subcategory": "code-quality",
+          "hash": "62aeee7da3c2e55ba8fe2636a9596a07ed121661421a20408c9f560ae000b611"
+        },
+        {
+          "id": "python-env-manager",
+          "path": "src/skore_cli/skills/python-env-manager",
+          "title": "Python Environment Manager",
+          "summary": "Bootstrapping the experiment setup based on your favorite Python environment manager.",
+          "category": "tooling",
+          "subcategory": "project-setup",
+          "hash": "a014306ebdb4c66701bfbd2ba2bbc569a6044af715b3133b55831201f4189bc0"
+        },
+        {
+          "id": "data-science-python-stack",
+          "path": "src/skore_cli/skills/data-science-python-stack",
+          "title": "Data Science Python Stack",
+          "summary": "Opinionated one-library-per-job Python stack, organized into mandatory / user-choice / optional / transitive tiers.",
+          "category": "reference",
+          "subcategory": null,
+          "hash": "a09e0b33b1a411eac902eb612831ef5b4e686511d65f5ba6f99a291ea265a698"
+        },
+        {
+          "id": "python-api",
+          "path": "src/skore_cli/skills/python-api",
+          "title": "Python API Discovery",
+          "summary": "Discover the public API of any installed Python package to make agent find their way without bothering your workspace.",
+          "category": "reference",
+          "subcategory": null,
+          "hash": "fee4393d65f6ae5901f72835865b68a6682a90114f3d6d105d969780b87c807e"
+        }
+      ],
+      "workflows": [
+        {
+          "id": "ml-experimentation",
+          "title": "ML Experimentation Companion",
+          "summary": "A machine learning experiment companion. Focus on the science, the companion organizes the rest with organized workspaces and reporting, auditable results where you are still the owner.",
+          "includes": [
+            "organize-ml-workspace",
+            "python-env-manager",
+            "data-science-python-stack",
+            "python-code-style",
+            "python-api",
+            "explore-ml-data",
+            "build-ml-pipeline",
+            "evaluate-ml-pipeline",
+            "test-ml-pipeline",
+            "smoke-test-ml-pipeline",
+            "audit-ml-pipeline",
+            "iterate-ml-experiment",
+            "iterate-from-skore",
+            "iterate-from-user"
+          ]
+        }
+      ],
+      "release": "0.2.0"
+    }
+  }
+}

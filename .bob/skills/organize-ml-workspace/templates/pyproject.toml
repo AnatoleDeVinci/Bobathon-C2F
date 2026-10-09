@@ -1,0 +1,27 @@
+# Minimal `pyproject.toml` for an ML experimentation workspace.
+#
+# Purpose: declare the local `src/<pkg>/` as an installable, editable
+# Python package so `from <pkg>.X import Y` works from any CWD without
+# `PYTHONPATH=src` hacks. Runtime dependencies stay in the env
+# manager's manifest (pixi.toml / poetry / uv / hatch / conda) — this
+# file only describes the package, not its dependencies.
+#
+# Replace `<pkg>` with the actual package name (kebab-case for
+# `project.name`, snake_case for the `src/<pkg>/` directory).
+#
+# Install the package in editable mode with the project's environment
+# manager (e.g. `pip install -e .`, or the manager's equivalent) so
+# `from <pkg>.X import Y` resolves from any working directory.
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "<pkg>"
+version = "0.1.0"
+description = "Workspace package for the <pkg> ML experiments."
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]
